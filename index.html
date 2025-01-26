@@ -42,55 +42,25 @@
     </section>
 
     <main>
-      <section class="card green" id="temperature">
-        <div class="card__head">
-          <h2 class="card__heading">Temperature</h2>
-        </div>
-
-        <article class="card__main">
-          <div class="card__content">
-            <div class="content__wrapper">
-              <div class="input__wrapper">
-                <input
-                  type="number"
-                  id="tmp_input"
-                  name="tmp_input"
-                  placeholder="0"
-                />
-                <label for="tmp_input">°C</label>
-              </div>
-
-              <div class="card__switch">
-                <button id="btn__switch"></button>
-                <div class="divider"></div>
-              </div>
-
-              <div class="input__wrapper">
-                <input
-                  type="number"
-                  id="tmp_input"
-                  name="tmp_input"
-                  placeholder="0"
-                />
-                <label for="tmp_input">°C</label>
-              </div>
-              <button class="btn__convert" id="btn-convert">Convert</button>
-            </div>
-
-            <p class="card__desc">
-              Conversion Formula:
-              <span> °F = °C x 9/5 + 32 </span>
-            </p>
-          </div>
-
-          <figure class="card__img">
+      <section class="card green-theme" id="temperature">
+        <div class="card__wrapper" id="tmp">
+          <figure>
             <img
               src="./imgs/thermometers-illustration.png"
               alt="illustration of thermometers in F and C scales"
             />
-            <figcaption>Celsius to Fahrenheit conversion</figcaption>
+            <figcaption>Kilograms to Pounds Conversion</figcaption>
           </figure>
-        </article>
+
+          <article class="card__content">
+            <fieldset class="card__inputs">
+              <legend>Temperature</legend>
+
+              <label for="Temperature">Temperature</label>
+              input
+            </fieldset>
+          </article>
+        </div>
       </section>
     </main>
 

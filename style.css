@@ -10,8 +10,6 @@ body {
   height: 100%;
   width: 100%;
   font-family: "Inria Sans", serif;
-
-  box-sizing: border-box;
 }
 
 /* ==== ==== LAYOUT ==== ==== */
@@ -34,19 +32,6 @@ a {
 ul,
 ol {
   list-style: none;
-}
-
-/* REMOVING ARROWS AND SPINNERS FOR CLIENT BROWSERS */
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type="number"] {
-  -moz-appearance: textfield;
 }
 
 /* ==== ==== TOP NAVIGATION ==== ==== */
@@ -129,11 +114,6 @@ main {
   height: 100%; */
 
   justify-self: stretch;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
 }
 
 /* ==== ==== FOOTER ==== ==== */
@@ -164,193 +144,3 @@ footer {
     text-decoration: underline;
   }
 }
-
-/* ==== ==== CARDS ==== ==== */
-.card {
-  margin-top: 4rem;
-
-  width: 100%;
-  max-width: 40rem;
-  flex-shrink: 0;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-
-  border-radius: 8px;
-
-  background-color: #fff;
-  box-shadow: 4px 8px 16px 0px rgba(117, 82, 204, 0.1);
-
-  overflow: hidden;
-}
-
-.card__head {
-  width: 100%;
-  text-align: center;
-  padding: 0.5rem 2rem;
-
-  background-color: #00c16e;
-}
-
-.card__heading {
-  font-size: 2.25rem;
-  font-weight: 700;
-  color: #f3f4f7;
-}
-
-.card__main {
-  width: 100%;
-  padding: 3rem 2rem 4.5rem 2rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.card__content {
-  /* width: 100%; */
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.content__wrapper {
-  width: 100%;
-  max-width: 8rem;
-}
-
-.input__wrapper {
-  width: 100%;
-
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-
-  input {
-    max-width: 8rem;
-
-    padding: 0.25rem 0.75rem;
-    border-radius: 4px;
-    border: 1px solid #00c16e;
-
-    direction: rtl;
-
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #52565e;
-  }
-
-  input:focus,
-  input:active {
-    outline: none;
-    border-width: 2px;
-  }
-
-  input::placeholder {
-    color: #9fa0a4;
-    font-weight: 400;
-  }
-
-  label {
-    margin-left: 0.5rem;
-
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #52565e;
-  }
-}
-
-.card__switch {
-  margin: 0.25rem 0 0.25rem 0;
-
-  width: 120%;
-  transform: translateX(-20%);
-
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-
-  #btn__switch {
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: #fff;
-
-    background-image: url("./imgs/arrow-vertical-swap--green.svg");
-
-    border: none;
-  }
-
-  #btn__switch:hover {
-    cursor: pointer;
-    transform: scale(1.01, 1.01);
-    box-shadow: 4px 8px 16px 0px rgba(117, 82, 204, 0.1);
-  }
-
-  .divider {
-    margin-left: 0.75rem;
-
-    width: 100%;
-    height: 1px;
-    background-color: #00c16e;
-  }
-}
-
-.btn__convert {
-  margin-top: 1.75rem;
-  background-color: #00c16e;
-  border-radius: 8px;
-
-  border: 2px solid transparent;
-
-  color: #f3f4f7;
-  font-size: 1rem;
-  font-weight: 700;
-
-  padding: 0.5rem 2rem;
-
-  width: 100%;
-
-  transition: all ease-in-out 0.2s;
-}
-
-.btn__convert:hover {
-  cursor: pointer;
-  color: #00c16e;
-  background-color: #fff;
-  border-color: #00c16e;
-}
-
-.card__desc {
-  margin-top: 1.5rem;
-
-  color: #52565e;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 400;
-
-  span {
-    font-weight: 700;
-  }
-}
-
-.card__img {
-  max-width: 12rem;
-
-  margin-right: 4rem;
-
-  figcaption {
-    display: none;
-  }
-}
-
-/* TODO  */
-/* ! 1. Adjust the input, divider, and convert button    */
-/* !    so they are the same size as in figma design */
-/* ! 2. Add functionality to switch button with checkbox inputs */
-/* ? 3. Add functionality to Convert button via JS */
-/* ? 4. Add Cards together with their classes other conversion  */
-/* ?    units */
